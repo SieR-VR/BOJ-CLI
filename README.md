@@ -1,4 +1,4 @@
-<img src="blob:https://siervr.imgur.com/c5d7ae65-6c43-48bc-8a73-5d92b9c8690c"></img>
+![Imgur](https://i.imgur.com/0R9uhmN.gif)
 
 # BOJ-CLI
 
