@@ -7,7 +7,7 @@ description = "boj-cli is a command line interface for BOJ."
 readme = "README.md"
 homepage = "https://github.com/SieR-VR/boj-cli"
 repository = "https://github.com/SieR-VR/boj-cli"
-keywords = ["boj", "cli", "command line interface"]
+keywords = ["boj", "cli"]
 categories = ["boj"]
 edition = "2021"
 
