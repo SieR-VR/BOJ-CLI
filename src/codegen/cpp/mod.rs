@@ -3,7 +3,7 @@ use crate::problem_parse::Problem;
 mod code_builder;
 use code_builder::*;
 
-pub fn codegen(problem: &Problem) {
+pub fn codegen(problem: &Problem) -> String {
     let variables = problem
         .input
         .iter()
@@ -73,5 +73,5 @@ pub fn codegen(problem: &Problem) {
         ],
     };
 
-    println!("{}", generated.build(0));
+    generated.build(0)
 }

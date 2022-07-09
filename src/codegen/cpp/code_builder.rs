@@ -105,5 +105,5 @@ pub fn get_vector_with_initializer(
 }
 
 pub fn function_call(name: &str, args: &Vec<String>) -> String {
-    format!("{}({})", name, args.join(", "))
+    format!("{}({});", name, args.join(", "))
 }

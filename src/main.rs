@@ -22,10 +22,17 @@ async fn main() {
 
     let problem: Problem = serde_json::from_str(&body).unwrap();
 
-    match args.lang {
+    let result = match args.lang {
         Lang::Cpp11 => codegen::cpp::codegen(&problem),
         Lang::Cpp17 => codegen::cpp::codegen(&problem),
         Lang::Cpp => codegen::cpp::codegen(&problem),
         _ => panic!("Not implemented yet."),
+    };
+
+    if args.path.is_dir() {
+        let path = args.path.join(format!("{}.{}", args.problem_number, args.lang));
+        std::fs::write(path, result).expect("Failed to write code.");
+    } else {
+        std::fs::write(args.path, result).expect("Failed to write code.");
     }
 }
