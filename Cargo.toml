@@ -1,6 +1,14 @@
 [package]
 name = "boj-cli"
-version = "0.1.0"
+version = "0.0.1"
+authors = ["SieR-VR <nwh63@naver.com>"]
+license = "MIT"
+description = "boj-cli is a command line interface for BOJ."
+readme = "README.md"
+homepage = "https://github.com/SieR-VR/boj-cli"
+repository = "https://github.com/SieR-VR/boj-cli"
+keywords = ["boj", "cli", "command line interface"]
+categories = ["boj"]
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
