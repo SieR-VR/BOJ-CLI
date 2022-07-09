@@ -8,8 +8,6 @@ use problem_parse::Problem;
 #[tokio::main]
 async fn main() {
     let args = <Args as clap::Parser>::parse();
-    println!("{:?}", args);
-
     let body = reqwest::get(format!(
         "https://raw.githubusercontent.com/SieR-VR/BOJ-CLI-Database/master/{}.json",
         args.problem_number
